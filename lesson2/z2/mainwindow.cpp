@@ -36,5 +36,6 @@ void MainWindow::on_checkBox_stateChanged(int arg1)
         ui->listWidget->setViewMode(QListWidget::IconMode);
     } else {
         ui->listWidget->setViewMode(QListWidget::ListMode);
+        ui->listWidget->setMovement(QListView::Snap);
     }
 }
