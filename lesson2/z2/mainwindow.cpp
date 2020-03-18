@@ -24,7 +24,6 @@ void MainWindow::on_delete_pushButton_clicked()
 
 void MainWindow::on_add_pushButton_clicked()
 {
-    // QString language = QInputDialog::getText(this,"Добавление языка","Язык программирования");
     QListWidgetItem* Item = new QListWidgetItem(QIcon(":logos/logos/reddot.png"),
                                 QInputDialog::getText(this,"Добавление языка","Язык программирования"));
     ui->listWidget->addItem(Item);
